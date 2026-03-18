@@ -1,3 +1,5 @@
+/* Created stored procedure to load data in tables.
+Used Full load (Truncate & Insert) method to load data in bulk. */
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
