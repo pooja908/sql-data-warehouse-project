@@ -1,7 +1,12 @@
+/* In this project layered data architecture usually known as the Bronze, Silver, and Gold layersused. 
+Created three schema bronze,silver and gold.
+Created 6 tables. It first checks table is exist or not if exists then it drops table and create new.*/
+-- Creation of Database
 use master
 CREATE DATABASE DataWarehouse;
 USE DataWarehouse;
 
+-- Creation of Schemas
 CREATE SCHEMA bronze;
 GO
 CREATE SCHEMA silver;
@@ -9,6 +14,7 @@ GO
 CREATE SCHEMA gold;
 GO
 
+ -- Creation of tables 
 IF OBJECT_ID('bronze.crm_cust_info','U') IS NOT NULL
 DROP TABLE bronze.crm_cust_info;
 
